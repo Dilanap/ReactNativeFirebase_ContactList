@@ -6,6 +6,7 @@ const CardKontak = ({id, kontakItem, navigation}) => {
   return (
     <TouchableOpacity
       style={styles.container}
+      onPress={() => navigation.navigate('DetailKontak', {id: id})}>
       <View>
         <Text style={styles.nama}>{kontakItem.nama}</Text>
         <Text style={styles.alamat}>{kontakItem.alamat}</Text>
